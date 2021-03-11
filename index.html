@@ -17,12 +17,13 @@
   </label><br><br>
 
   <label for="photo">Foto:
-    <input type="file" name="photo" id="meme-insert">
+    <input type="file" name="photo" id="meme-insert" accept="image/*">
+    <input type="submit" name="submit" id="submit">
   </label>
 
   <div id="meme-image-container">
-    <div class="meme-image"></div>
-    <div id="meme-text"></div>
+    <img id="meme-image"></img>
+    <span id="meme-text"></span>
   </div>
 
   <script src="script.js"></script>
