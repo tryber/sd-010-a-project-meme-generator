@@ -13,18 +13,26 @@
     </header>
 
     <main id="main-container">
+      
+      <section id="input-container">
+        <div id="text-container">
+          <label for="text-input">Texto:</label>
+          <input type="text" id="text-input" />
+        </div>
+        <div id="upload-container">
+          <label for="meme-insert">Imagem:</label>
+          <input type="file" id="meme-insert" />
+        </div>
+      </section>
 
-      <div id="input-container">
-        <p id="text-p">Texto:</p>
-        <input type="text" id="text-input" />
-      </div>
-
-      <div id="meme-image-container">
+      <section id="meme-image-container">
+        <div id="image-container">
+          <img />
+        </div>
         <div id="text-image-container">
-          <img src="" alt="image-meme" id="image">
           <p id="meme-text"></p>
         </div>
-      </div>
+      </section>
 
     </main>
     <script src="script.js"></script>
