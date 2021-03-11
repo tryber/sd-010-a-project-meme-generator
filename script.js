@@ -1,3 +1,5 @@
+const memeImageId = '#meme-image-container';
+
 function generateText() {
   const inputValue = document.querySelector('#text-input');
   const memeText = document.querySelector('#meme-text');
@@ -28,7 +30,7 @@ function fire() {
 
 function water() {
   const waterBtn = document.querySelector('#water');
-  const memeContainer = document.querySelector('#meme-image-container');
+  const memeContainer = document.querySelector(memeImageId);
 
   waterBtn.addEventListener('click', () => {
     memeContainer.style.border = '5px double blue';
@@ -37,7 +39,7 @@ function water() {
 
 function earth() {
   const earthBtn = document.querySelector('#earth');
-  const memeContainer = document.querySelector('#meme-image-container');
+  const memeContainer = document.querySelector(memeImageId);
 
   earthBtn.addEventListener('click', () => {
     memeContainer.style.border = '6px groove green';
@@ -49,8 +51,8 @@ function imgs() {
   const memeImg = document.getElementById('meme-image');
 
   imgsContainer.addEventListener('click', (event) => {
-    memeImg.src = event.target.src
-  })
+    memeImg.src = event.target.src;
+  });
 }
 
 window.onload = () => {
