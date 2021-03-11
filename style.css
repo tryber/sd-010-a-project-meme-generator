@@ -8,8 +8,11 @@ body {
 
 #meme-text {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 10px;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
 }
 
 #meme-image-container {
