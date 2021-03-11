@@ -17,12 +17,12 @@
 }
 
 #text-image-section div {
-  margin: 10px 0px ;
+  margin: 10px 0;
 }
 
 #meme-text {
   display: inline-block;
-  margin: 250px 10px 0px;
+  margin: 250px 10px 0;
   font-size: 30px;
   font-weight: 800;
 }

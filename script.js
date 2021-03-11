@@ -6,7 +6,7 @@ function addTextToMeme() {
   memeContainer.appendChild(p);
   text.addEventListener('keyup', () => {
     p.innerText = text.value;
-  })
+  });
 }
 
 window.onload = () => {
