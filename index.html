@@ -15,15 +15,29 @@
 <!-----------------------header----------------------->
     <header></header>
 <!-----------------------main------------------------->
-    <main>
-        <section id="input-container">
-            <input type="text" id="text-input">
-        </section>
-        <section id="meme-image-container">
-            <image id="image"></image>
+<main id="main-container">
+    
+    <section id="input-container">
+        <div id="text-container">
+            <label for="text-input">Texto:</label>
+            <input type="text" id="text-input" />
+        </div>
+        <div id="upload-container">
+            <label for="meme-insert">Imagem:</label>
+            <input type="file" id="meme-insert" />
+        </div>
+    </section>
+
+    <section id="meme-image-container">
+        <div id="image-container">
+            <img src="" alt="">
+        </div>
+        <div id="text-image-container">
             <p id="meme-text"></p>
-        </section>
-    </main>
+        </div>
+    </section>
+
+</main>
 <!-----------------------footer----------------------->
     <footer></footer>
 </body>
