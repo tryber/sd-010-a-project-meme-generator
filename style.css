@@ -1,46 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-body , h1 , h2 , h3 , p , ul , li , table , td , tr {
-  padding: 0;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-  border-spacing: 0;
-}
-
-body {
-  background-color: rgba(246 , 189 , 96 , 1);
-  font-family: Roboto, sans-serif;
-}
-
-main {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-#header-container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-#title {
-  padding: 30px 0;
-  text-align: center;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-#input-container {
-  padding-bottom: 15px;
-}
-
-#text-container {
-  padding-bottom: 10px;
-}
-
 #meme-image-container {
+  align-items: center;
   background-color: white;
   border: 1px solid black;
   display: flex;
@@ -50,22 +9,33 @@ main {
   width: 400px;
 }
 
-#meme-text {
-  color: white;
-  font-size: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 2px 2px black;
-}
-
-#meme-image img , .meme-image {
-  width: 400px;
-  height: 400px;
-}
-
 #text-image-container {
-  width: 400px;
   position: absolute;
   top: 400px;
   z-index: 1;
 }
+
+#meme-text {
+  color: white;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
+}
+
+section {
+  margin: 10px 0;
+}
+
+#meme-image img , .meme-image {
+  height: 400px;
+  width: 400px;
+}
+
+/* .meme-image {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.meme-image img {
+  height: 400px;
+  overflow: hidden;
+} */
