@@ -1,0 +1,31 @@
+#meme-image-container {
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  width: 400px;
+}
+
+#text-image-container {
+  position: absolute;
+  top: 400px;
+  z-index: 1;
+}
+
+#meme-text {
+  color: white;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
+}
+
+section {
+  margin: 10px 0;
+}
+
+#meme-image img , .meme-image {
+  height: 400px;
+  width: 400px;
+}
