@@ -1,0 +1,19 @@
+#meme-image-container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+#meme-text {
+  width: 100%;
+  z-index: 1;
+  color: white;
+  overflow-wrap: break-word;
+  position: absolute;
+}
+
+#meme-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
