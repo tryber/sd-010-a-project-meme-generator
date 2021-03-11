@@ -1,15 +1,16 @@
 * {
   padding: 2px;
   border: 0;
-  margin: 0
+  margin: 0;
 }
 
-.container {
+#meme-image-container {
   padding: 10px;
   background-color: white;
   height: 150px;
   width: 150px;
   border: 1px solid black;
+  margin-top: 10px;
 }
 
 input {
@@ -18,14 +19,17 @@ input {
   margin-left: 10px;
 }
 
-input::-webkit-input-placeholder{
-  color:grey;
+input::-webkit-input-placeholder {
+  color: grey;
   font-size: 8px;
   text-align: center;
   font-style: italic;
+  z-index: 1;
 }
 
 p {
-  color: red;
+  font-size: 30px;
+  color: white;
   word-break: break-all;
+  text-shadow: black 5px 5px 5px;
 }
