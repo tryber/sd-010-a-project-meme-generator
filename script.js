@@ -17,7 +17,47 @@ function addImg() {
   });
 }
 
+function fire() {
+  const fireBtn = document.querySelector('#fire');
+  const memeContainer = document.querySelector('#meme-image-container');
+
+  fireBtn.addEventListener('click', () => {
+    memeContainer.style.border = '3px dashed red';
+  });
+}
+
+function water() {
+  const waterBtn = document.querySelector('#water');
+  const memeContainer = document.querySelector('#meme-image-container');
+
+  waterBtn.addEventListener('click', () => {
+    memeContainer.style.border = '5px double blue';
+  });
+}
+
+function earth() {
+  const earthBtn = document.querySelector('#earth');
+  const memeContainer = document.querySelector('#meme-image-container');
+
+  earthBtn.addEventListener('click', () => {
+    memeContainer.style.border = '6px groove green';
+  });
+}
+
+function imgs() {
+  const imgsContainer = document.querySelector('.memes');
+  const memeImg = document.getElementById('meme-image');
+
+  imgsContainer.addEventListener('click', (event) => {
+    memeImg.src = event.target.src
+  })
+}
+
 window.onload = () => {
   generateText();
   addImg();
+  fire();
+  water();
+  earth();
+  imgs();
 };
