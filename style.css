@@ -23,4 +23,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   border: solid black 1px;
+  background-color: white;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
 }
