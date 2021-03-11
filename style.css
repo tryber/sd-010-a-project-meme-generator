@@ -1,0 +1,28 @@
+#meme-image-container {
+  border: 2px solid black;
+  height: 400px;
+  width: 400px;
+  margin: 20px 200px;
+  display: flex;
+  align-items: baseline;
+}
+
+#text-image-section {
+  display: inline-block;
+}
+
+#text-image-section span {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#text-image-section div {
+  margin: 10px 0px ;
+}
+
+#meme-text {
+  display: inline-block;
+  margin: 250px 10px 0px;
+  font-size: 30px;
+  font-weight: 800;
+}
