@@ -34,7 +34,7 @@ function usarImagemSugerida(imgElHTML) {
   memeImagem.src = imagemSelecionada;
 }
 
-memeTextoInput.addEventListener('change', escreverTextoNoMeme);
+memeTextoInput.addEventListener('input', escreverTextoNoMeme);
 memeImagemInput.addEventListener('change', readImage);
 mudarBordaButtons.forEach((el) => el.addEventListener('click', (e) => mudarBorda(e.target)));
 imagensSugeridas.forEach((el) => el.addEventListener('click', (e) => usarImagemSugerida(e.target)));
