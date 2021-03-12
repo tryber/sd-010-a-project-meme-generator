@@ -27,3 +27,9 @@ function earthBorder() {
 document.getElementById('fire').addEventListener('click', fireBorder);
 document.getElementById('water').addEventListener('click', waterBorder);
 document.getElementById('earth').addEventListener('click', earthBorder);
+
+function addMemeFoto(event) {
+  document.getElementById('meme-image').src = event.target.src;
+}
+
+document.getElementById('prememes').addEventListener('click', addMemeFoto);
