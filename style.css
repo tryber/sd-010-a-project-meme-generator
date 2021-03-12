@@ -23,12 +23,13 @@ main {
 }
 
 #meme-image-container {
-  background-color: rgb(131, 112, 112);
+  background-color: white;
   width: 500px;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  border: 1px solid black;
 }
 
 #meme-image {
