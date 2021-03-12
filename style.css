@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+#meme-image-container {
+  position: relative;
+  background-color: red;
+  width: 50vw;
+  height: 50vh;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+#meme-text {
+  position: absolute;
+  top: 200px;
+}
