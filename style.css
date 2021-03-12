@@ -11,6 +11,16 @@ body {
   align-items: center;
 }
 
+button {
+  width: 75px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 #text-input {
   width: 200px;
 }
@@ -44,4 +54,16 @@ main {
   font-size: 30px;
   font-weight: 700;
   color: white;
+}
+
+#fire {
+  background: red;
+}
+
+#water {
+  background: blue;
+}
+
+#earth {
+  background: green;
 }
