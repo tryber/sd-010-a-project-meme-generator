@@ -40,4 +40,8 @@ main {
 #meme-image-container #meme-text {
   z-index: 2;
   position: absolute;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
 }
