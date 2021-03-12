@@ -25,8 +25,8 @@ const fileReader = (e) => {
 
   file.onprogress = () => { memeText.textContent = 'Carregando...'; };
 
-  file.onerror = () => { 
-    errorMsg.innerHTML = 'Ocorreu um erro inesperado, tente inserir uma imagem novamente.'; 
+  file.onerror = () => {
+    errorMsg.innerHTML = 'Ocorreu um erro inesperado, tente inserir uma imagem novamente.';
   };
 
   file.onloadend = (ev) => {
