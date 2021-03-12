@@ -3,6 +3,14 @@ body {
   background-color: rgb(202 , 228 , 228);
 }
 
+#main {
+  background-color: white;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+}
+
 #meme-image {
   width: 500px;
   height: 400px;

@@ -10,7 +10,7 @@ function loadFile(event) {
 
 document.getElementById('meme-insert').onchange = loadFile;
 
-let containerImage = document.getElementById('meme-image-container');
+const containerImage = document.getElementById('meme-image-container');
 
 function fireBorder() {
   containerImage.style.border = 'dashed 3px red';
