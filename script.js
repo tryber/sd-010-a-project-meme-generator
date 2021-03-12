@@ -8,16 +8,20 @@ function loadFile(event) {
   document.getElementById('meme-image').src = URL.createObjectURL(event.target.files[0]);
 }
 
+document.getElementById('meme-insert').onchange = loadFile;
+
+let containerImage = document.getElementById('meme-image-container');
+
 function fireBorder() {
-  document.getElementById('meme-image-container').style.border = 'dashed 3px red';
+  containerImage.style.border = 'dashed 3px red';
 }
 
 function waterBorder() {
-  document.getElementById('meme-image-container').style.border = 'double 5px blue';
+  containerImage.style.border = 'double 5px blue';
 }
 
 function earthBorder() {
-  document.getElementById('meme-image-container').style.border = 'groove 6px green';
+  containerImage.style.border = 'groove 6px green';
 }
 
 document.getElementById('fire').addEventListener('click', fireBorder);
