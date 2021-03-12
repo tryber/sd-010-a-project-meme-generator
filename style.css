@@ -1,16 +1,22 @@
 * {
-  padding: 2px;
+  padding: 10px;
   border: 0;
-  margin: 0;
+  margin-left: 10%;
+}
+
+h1 {
+  font-size: 3em;
+  margin-left: 7.5%;
 }
 
 #meme-image-container {
-  padding: 10px;
+  padding: 0;
   background-color: white;
-  height: 150px;
-  width: 150px;
+  height: 300px;
+  width: 300px;
   border: 1px solid black;
   margin-top: 10px;
+  margin-left: 20%;
 }
 
 input {
@@ -21,15 +27,39 @@ input {
 
 input::-webkit-input-placeholder {
   color: grey;
-  font-size: 8px;
+  font-size: 1em;
   text-align: center;
   font-style: italic;
-  z-index: 1;
+}
+
+#meme-text {
+  margin-top: 2%;
+  margin-left: -300px;
+  font-size: 30px;
+  color: white;
+  text-shadow: black 5px 5px 5px;
+  position: absolute;
+  word-break: break-all;
 }
 
 p {
-  font-size: 30px;
-  color: white;
-  word-break: break-all;
-  text-shadow: black 5px 5px 5px;
+  display: inline-block;
+  font-size: 1em;
+}
+
+button {
+  margin-left: 15px;
+  border-radius: 10%;
+  font-size: 1em;
+}
+
+#meme-insert {
+  border: none;
+  width: 200px;
+}
+
+#meme-image {
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
