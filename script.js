@@ -1,7 +1,6 @@
 const inputText = document.querySelector('#text-input');
 const memeText = document.querySelector('#meme-text');
 const memeImg = document.querySelector('#meme-image');
-const memeInsert = document.querySelector('#meme-insert');
 const errorMsg = document.querySelector('#error-msg');
 const memeImageContainer = document.querySelector('#meme-image-container');
 
@@ -20,15 +19,15 @@ const showInputTextInContainer = () => {
 
 const fileReader = (e) => {
   const file = new FileReader();
-  if (!e.target.files[0]) {
-    return;
-  }
+  if (!e.target.files[0]) return;
 
   file.onloadstart = () => { memeImg.setAttribute('src', ''); errorMsg.innerHTML = ''; };
 
   file.onprogress = () => { memeText.textContent = 'Carregando...'; };
 
-  file.onerror = () => { errorMsg.innerHTML = 'Ocorreu um erro inesperado, tente inserir uma imagem novamente.'; };
+  file.onerror = () => { 
+    errorMsg.innerHTML = 'Ocorreu um erro inesperado, tente inserir uma imagem novamente.'; 
+  };
 
   file.onloadend = (ev) => {
     memeText.textContent = inputText.value;
@@ -38,9 +37,7 @@ const fileReader = (e) => {
   file.readAsDataURL(e.target.files[0]);
 };
 
-const getImage = (imgId) => {
-  return document.querySelector(imgId).src;
-};
+const getImage = (imgId) => document.querySelector(imgId).src;
 
 window.onload = () => {
   addEvListener('#text-input', 'keyup', showInputTextInContainer);
