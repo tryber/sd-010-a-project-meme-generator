@@ -2,6 +2,7 @@
 h1 {
     text-align: center;
 }
+
 /* -----------------------main------------------------- */
 main {
     display: flex;
@@ -24,21 +25,21 @@ section {
     width: 500px;
 }
 
-    #meme-image img , .meme-image {
-        height: 100%;
-        width: 100%;
-    }
+#meme-image img , .meme-image {
+    height: 100%;
+    width: 100%;
+}
 
-    #text-image-container {
-        position: absolute;
-        top: 500px;
-        z-index: 10;
-    }
+#text-image-container {
+    position: absolute;
+    top: 500px;
+    z-index: 10;
+}
 
-        #meme-text {
-            color: white;
-            font-size: 30px;
-            text-shadow: 5px 5px 5px black;
-        }
+#meme-text {
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px black;
+}
 
 /* -----------------------footer----------------------- */
