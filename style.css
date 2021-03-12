@@ -67,3 +67,15 @@ main {
 #earth {
   background: green;
 }
+
+#imagens-sugestao {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#imagens-sugestao img {
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+}
