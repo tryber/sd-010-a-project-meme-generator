@@ -74,3 +74,11 @@ img {
   max-width: 20%;
   max-height: 20%;
 }
+
+#container-btns {
+  background: red;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 12px;
+  border-radius: 8px;
+}
