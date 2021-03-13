@@ -10,14 +10,21 @@
 </head>
 
 <body>
-    <input type="text" id="text-input">
-    <input type="file" name="meme-insert" id="meme-insert">
-
-    <section id="meme-image-container">
-        <img src="" alt="selected meme" id="meme-image">
+    <section id="main-container">
+        <h1>MEME GENERATOR</h1>
+        <section>
+            <input type="text" id="text-input" maxlength="60">
+            <input type="file" name="meme-insert" id="meme-insert">
+        </section>
+        <section id="meme-image-container">
+            <img src="" alt="selected meme" id="meme-image">
+            <button class="btn-style" id="fire">fogo</button>
+            <button class="btn-style" id="water">agua</button>
+            <button class="btn-style" id="earth">terra</button>
+        </section>
+    
+        <script src="script.js"></script>
     </section>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

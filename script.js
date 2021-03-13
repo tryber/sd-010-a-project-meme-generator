@@ -1,7 +1,8 @@
 const paragraph = document.createElement('p');
-const memeImageContainer = document.getElementById('meme-image-container')
+const memeImageContainer = document.getElementById('meme-image-container');
 paragraph.id = 'meme-text';
 memeImageContainer.appendChild(paragraph);
+memeImageContainer.style.border = 'solid black 1px';
 
 const textInput = () => {
   document.getElementById('text-input').addEventListener('input', (e) => {
@@ -28,14 +29,16 @@ const fileInput = () => {
   });
 };
 
+const btnStyle = () => {
+  document.querySelectorAll('.btn-style').forEach((e) => {
+    e.addEventListener('click', (btn) => {
+      const idName = btn.target.id;
+      memeImageContainer.style.border = '';
+      memeImageContainer.className = `${idName}-style`;
+    });
+  });
+};
+
 textInput();
 fileInput();
-
-/*
-file.onloadend = (ev) => {
-    memeText.textContent = inputText.value;
-    memeImg.setAttribute('src', ev.target.result);
-  };
-
-  file.readAsDataURL(e.target.files[0]);
-*/
+btnStyle();
