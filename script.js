@@ -1,6 +1,6 @@
 const paragraph = document.createElement('p');
-const memeImageContainer = document.getElementById('meme-image-container');
 paragraph.id = 'meme-text';
+const memeImageContainer = document.getElementById('meme-image-container');
 memeImageContainer.appendChild(paragraph);
 memeImageContainer.style.border = 'solid black 1px';
 
@@ -24,7 +24,6 @@ const fileReader = (file) => {
 const fileInput = () => {
   document.getElementById('meme-insert').addEventListener('change', (e) => {
     const displayImage = e.target.files[0];
-    console.log(displayImage);
     fileReader(displayImage);
   });
 };
@@ -39,6 +38,17 @@ const btnStyle = () => {
   });
 };
 
+const displayMeme = () => {
+  document.querySelectorAll('#img-meme img').forEach((e) => {
+    e.addEventListener('click', (meme) => {
+      const imageMeme = meme.target;
+      const mainImageMeme = document.querySelector('#meme-image');
+      mainImageMeme.src = imageMeme.src;
+    });
+  });
+};
+
+displayMeme();
 textInput();
 fileInput();
 btnStyle();
