@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.top {
+  line-height: 30px;
+}
+
 #meme-image-container {
   background-color: white;
   position: relative;
@@ -24,6 +28,7 @@
   font-size: 30px;
   text-align: center;
   width: 80%;
+  max-width: 80%;
   top: 270px;
   position: absolute;
   left: 50%;
@@ -33,4 +38,5 @@
   color: white;
   -webkit-text-stroke: 1px black;
   text-shadow: black 5px 5px 5px;
+  word-break: normal;
 }

@@ -6,8 +6,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="text" id="text-input" />
-  <input type="file" id="meme-insert" accept="image/*" onchange="loadImage(event)" />
+  <div class="top">
+    <input type="text" id="text-input" maxlength="60" />
+    <p id="max-chars"> </p>
+    <input type="file" id="meme-insert" accept="image/*" />
+  </div>
 
   <div id="meme-image-container">
     <p id="meme-text"></p>
