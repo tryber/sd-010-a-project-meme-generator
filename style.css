@@ -44,7 +44,7 @@
 .borders-style {
   width: 600px;
   text-align: center;
-  top: 20px;
+  margin-top: 20px;
   position: relative;
 }
 
@@ -69,4 +69,14 @@
 #earth {
   border: 6px groove green;
   background-color: green;
+}
+
+.images-memes {
+  margin-top: 20px;
+  width: 600px;
+  text-align: center;
+}
+
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
+  width: 100px;
 }
