@@ -25,3 +25,25 @@ function loadImage(event) {
 }
 
 // Linhas 23 até a linha 25 retirado do link: https://www.codegrepper.com/code-examples/html/input+type=%22file%22+and+display+image
+
+// Botões fire, water e earth
+const fireBtn = document.querySelector('#fire');
+const waterBtn = document.querySelector('#water');
+const earthBtn = document.querySelector('#earth');
+const memeImageContainer = document.querySelector('#meme-image-container');
+
+function fireBorder() {
+  memeImageContainer.style.border = '3px dashed red';
+}
+
+function waterBorder() {
+  memeImageContainer.style.border = '5px double blue';
+}
+
+function earthBorder() {
+  memeImageContainer.style.border = '6px groove green';
+}
+
+fireBtn.addEventListener('click', fireBorder);
+waterBtn.addEventListener('click', waterBorder);
+earthBtn.addEventListener('click', earthBorder);
