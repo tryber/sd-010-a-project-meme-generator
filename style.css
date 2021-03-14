@@ -40,3 +40,33 @@
   text-shadow: black 5px 5px 5px;
   word-break: normal;
 }
+
+.borders-style {
+  width: 600px;
+  text-align: center;
+  top: 20px;
+  position: relative;
+}
+
+#fire , #water , #earth {
+  margin: 0 5px;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  display: table-cell;
+}
+
+#fire {
+  border: 3px dashed red;
+  background-color: red;
+}
+
+#water {
+  border: 5px double blue;
+  background-color: blue;
+}
+
+#earth {
+  border: 6px groove green;
+  background-color: green;
+}
