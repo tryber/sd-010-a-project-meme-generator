@@ -4,11 +4,13 @@
 }
 
 #meme-image-container {
-  background-color: aqua;
+  background-color: white;
   position: relative;
   display: table;
   width: 600px;
   height: 350px;
+  border: 1px solid black;
+  overflow: hidden;
 }
 
 #meme-image {
