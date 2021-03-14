@@ -21,14 +21,16 @@
 
 #meme-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   width: 80%;
-  top: 250px;
+  top: 270px;
   position: absolute;
   left: 50%;
+  text-transform: uppercase;
   transform: translateX(-50%);
   font-weight: 600;
   color: white;
   -webkit-text-stroke: 1px black;
+  text-shadow: black 5px 5px 5px;
 }
