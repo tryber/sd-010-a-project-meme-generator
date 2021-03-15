@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <input id='text-input' type='text'>
+    <input id='text-input' type='text' maxlength='60'>
 
-    <input id='meme-insert' type='file'>
+    <input id='meme-insert' type='file' onchange='loadFile(event)'>
 
-    <section id='meme-image-container'>
-        <img id='meme-image'>
-        <span id='meme-text'></span>
-    </section>
+    <div id='meme-image-container'>
+        <img id='meme-image'></img>
+        <p id='meme-text'></p>
+    </div>
 
     <script src='script.js'></script>
 </body>
