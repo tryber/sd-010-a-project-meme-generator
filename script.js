@@ -47,3 +47,15 @@ function earthBorder() {
 fireBtn.addEventListener('click', fireBorder);
 waterBtn.addEventListener('click', waterBorder);
 earthBtn.addEventListener('click', earthBorder);
+
+// Memes btn
+const memesBtn = document.querySelectorAll('.meme-prepared-btn');
+
+function generateMeme(event) {
+  const actualSrc = event.target.src;
+  memeImage.src = actualSrc;
+}
+
+for (let i = 0; i < memesBtn.length; i += 1) {
+  memesBtn[i].addEventListener('click', generateMeme);
+}

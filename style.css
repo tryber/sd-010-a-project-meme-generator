@@ -34,3 +34,9 @@
 #earth {
   border: 6px groove green;
 }
+
+.meme-prepared-btn {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
