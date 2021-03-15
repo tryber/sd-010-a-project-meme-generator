@@ -5,7 +5,7 @@ inputText.addEventListener('keyup', () => {
   memeText.innerText = inputText.value;
 });
 
-const loadFile = (event) => {
-	const image = document.querySelector('#meme-image');
-	image.src = URL.createObjectURL(event.target.files[0]);
-};
+document.querySelector('#meme-insert').addEventListener('change', (event) => {
+  const image = document.querySelector('#meme-image');
+  image.src = URL.createObjectURL(event.target.files[0]);
+});
