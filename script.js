@@ -9,7 +9,7 @@ maxChars.innerHTML = 'Max. Chars: 0/60';
 
 inputText.addEventListener('keyup', () => {
   memeText.innerHTML = inputText.value;
-  const count = inputText.value.replace(/\s/g, '');
+  const count = inputText.value;
   maxChars.innerHTML = `Max. Chars: ${count.length}/60`;
 });
 
