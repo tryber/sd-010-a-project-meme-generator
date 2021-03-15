@@ -41,7 +41,7 @@ function waterBorder() {
 }
 
 function earthBorder() {
-  memeImageContainer.style.border = '6px groove green';
+  memeImageContainer.style.border = '6px groove rgb(0, 128, 0)';
 }
 
 fireBtn.addEventListener('click', fireBorder);
