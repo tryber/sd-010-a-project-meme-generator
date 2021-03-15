@@ -18,11 +18,11 @@ textInput.addEventListener('keyup', addText);
 const memeImage = document.querySelector('#meme-image');
 const memeInsert = document.querySelector('#meme-insert');
 
-memeInsert.addEventListener('change', loadImage);
-
 function loadImage(event) {
   memeImage.src = window.URL.createObjectURL(event.target.files[0]);
 }
+
+memeInsert.addEventListener('change', loadImage);
 
 // Linhas 23 até a linha 25 retirado do link: https://www.codegrepper.com/code-examples/html/input+type=%22file%22+and+display+image
 
