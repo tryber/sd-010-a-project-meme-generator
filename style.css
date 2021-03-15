@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 20px;
+}
+
+main {
+  margin: 20px;
+}
