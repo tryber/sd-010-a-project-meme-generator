@@ -6,4 +6,4 @@ function inputText(evt) {
   textSpan.innerText = textInput.value;
 }
 
-textInput.addEventListener('change', inputText);
+textInput.addEventListener('keyup', inputText);
