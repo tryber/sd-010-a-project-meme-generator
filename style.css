@@ -7,7 +7,7 @@
   font-size: 30px;
   font-weight: 600;
   position: absolute;
-  text-shadow: black 5px, 5px, 5px;
+  text-shadow: 5px 5px 5px black;
   z-index: 1;
 }
 
