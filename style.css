@@ -25,5 +25,7 @@ body {
   word-wrap: break-word;
   z-index: 1;
   font-family: impact;
-  font-size: 35px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
 }
