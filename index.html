@@ -8,8 +8,10 @@
   <title>Meme Generator</title>
 </head>
 <body>
-  <input id='text-input'>
+  <input type='text' id='text-input' placeholder='Texto do meme'>
+  <input type='file' id='meme-insert' onchange='loadImage(event)'>
   <div id='meme-image-container'>
+    <img id='meme-image'>
     <div id='meme-text'></div>
   </div>
   <script src='script.js'></script>
