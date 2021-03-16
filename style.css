@@ -1,3 +1,19 @@
-.meme-text {
+.positioning {
+  height: 250px;
+  width: 250px;
+}
+
+#meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 5px;
+  position: relative;
+}
+
+#meme-text {
+  font-size: 20px;
   position: absolute;
+  text-align: center;
+  top: 10%;
+  width: 100%;
 }
