@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 15px;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    margin: 30px;
+}
+
+.box {
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    
+}
+
+#imgOutput {
+    z-index: -1;
+}
+
+#submit {
+    margin-top: 10px;
+    height: 40px;
+}
