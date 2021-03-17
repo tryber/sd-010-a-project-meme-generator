@@ -44,3 +44,7 @@ body {
   background-color: green;
   color: white;
 }
+
+.pre-loaded-memes img{
+  height: 100px;
+}

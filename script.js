@@ -29,3 +29,9 @@ const earthBtn = document.getElementById('earth');
 earthBtn.addEventListener('click', () => {
   memeContainer.style.border = '6px groove green'
 });
+
+const preLoadedMemes = document.getElementsByClassName('pre-loaded-memes')[0];
+preLoadedMemes.addEventListener('click', (e) => {
+  let memeImage = document.getElementById('meme-image');
+  memeImage.src = e.target.src;
+})
