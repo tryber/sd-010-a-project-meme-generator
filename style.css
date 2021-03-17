@@ -20,6 +20,7 @@ main {
     width: 500px;
     height: 500px;
     overflow: hidden;
+    background-size:cover;
     
 }
 
@@ -30,4 +31,14 @@ main {
 #submit {
     margin-top: 10px;
     height: 40px;
+}
+
+.txt {
+    z-index: 1;
+    font-family: fantasy;
+    font-weight: 800;
+    font-size:80px;
+    text-shadow:3px 3px yellowgreen;
+    color: blueviolet;
+    overflow:hidden;   
 }
