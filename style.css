@@ -1,15 +1,20 @@
 #meme-image {
-    width: 640px;
-    height: 640px;
-    border: solid black 1px;
-    position: absolute;
-    z-index: 1;
+  position: absolute;
+  z-index: 1;
 }
 
 #meme-text {
-    position: absolute;
-    z-index: 2;
-    top: 600px;
-    left: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 600px;
+  left: 30px;
+  width: fit-content;
+  width: 100%;
 }
 
+#meme-image-container {
+  background-color: white;
+  width: 640px;
+  height: 640px;
+  border: solid black 1px;
+}
