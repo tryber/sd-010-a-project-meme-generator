@@ -24,7 +24,6 @@ body {
   width: 100%;
   word-wrap: break-word;
   z-index: 1;
-  font-family: impact;
   font-size: 30px;
   color: white;
   text-shadow: 5px 5px 5px black;
@@ -45,6 +44,6 @@ body {
   color: white;
 }
 
-.pre-loaded-memes img{
+.pre-loaded-memes img {
   height: 100px;
 }
