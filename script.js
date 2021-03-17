@@ -39,3 +39,15 @@ function changeColorBorder(borderType) {
 changeColorBorder('fire');
 changeColorBorder('water');
 changeColorBorder('earth');
+
+const memeContainer = document.getElementById('container-memes');
+
+function changeImgMeme(event) {
+  if (event.target.src !== undefined) {
+    const memeImage = document.getElementById('meme-image');
+    const srcImg = event.target.getAttribute('src');
+    memeImage.setAttribute('src', srcImg);
+  }
+}
+
+memeContainer.addEventListener('click', changeImgMeme);
