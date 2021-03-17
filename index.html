@@ -9,22 +9,34 @@
 </head>
 <body>
   
-  <header>
+  <header id="header">
     <h1>Meme Generator</h1>
   </header>
 
   <ul>
-    <li class="meme-image-container">
-      <label for="text-input">Texto:</label>
-      <input type="text" name="text-input" id="text-input">
-      <span class="meme-text"></span>
+    <div class="wrap-inputs">
+      <li id="line">
+        <label for="text-input">Texto:</label>
+        <input type="text" name="text-input" id="text-input" maxlength="60">
+      </li>
+
+      <li class="line">
+        <label for="meme-insert">Foto:</label>
+        <input type="file" name="photo" id="meme-insert">
+      </li>
+    </div>
+
+    <li id="meme-image-container">
+      <img src="" alt="Selecione a imagem" id="meme-image">
+      <p id="meme-text"></p>
     </li>
-    <li>
-      <label for="photo">Foto:</label>
-      <input type="file" name="photo" id="photo">
+
+    <li id="btns">
+      <button id="fire" type="button">fire</button>
+      <button id="water" type="button">water</button>
+      <button id="earth" type="button">earth</button> 
     </li>
   </ul>
-  
 
 </body>
 <script src="script.js"></script>
