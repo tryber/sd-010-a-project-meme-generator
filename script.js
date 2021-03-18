@@ -11,7 +11,7 @@ function inserTextMeme() {
 
 function insertImageMeme() {
   console.log(insertImage.value);
-  image.src = insertImage.value;
+  image.src = URL.createObjectURL(insertImage.files[0]);
 }
 
 // Delaração de escutadores de eventos
