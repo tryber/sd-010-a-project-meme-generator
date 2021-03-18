@@ -1,5 +1,5 @@
 #meme-image {
-  height: 100%;
+  width: 700px;
 
 }
 
@@ -8,15 +8,14 @@
   bottom: 10px;
   left: 10px;
 
-  box-sizing: border-box;
 }
 
 #meme-image-container {
   background-color: white;
   position: relative;
-  height: 640px;
-  width: fit-content;
-  border: solid blue 1px;
+  height: max-content;
+  width: max-content;
+  border: solid black 1px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
