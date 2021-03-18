@@ -38,11 +38,11 @@ body {
 #meme-text {
   position: absolute;
   bottom:0;
-
   margin-left: 10px;
   z-index:10;
   color:white;
-
   font-weight: bold;
-  font-size: 28px;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px #000;
+
 }
