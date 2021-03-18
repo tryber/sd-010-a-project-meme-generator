@@ -3,7 +3,7 @@ const textImage = document.querySelector('#text-input');
 
 function insertText() {
     const textInput = document.querySelector('#text-input');
-    const textImage = document.querySelector('#meme-text');
+    textImage = document.querySelector('#meme-text');
     textImage.innerText = textInput.value;
 }
 
@@ -13,7 +13,7 @@ textImage.addEventListener('keyup', insertText);
 const insert = document.querySelector('#meme-insert');
 
 function uploadImg() {
-    const insert = document.querySelector('#meme-insert');
+    insert = document.querySelector('#meme-insert');
     const image = document.querySelector('#meme-image img');
     image.src = URL.createObjectURL(insert.files[0]);
 }
