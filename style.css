@@ -1,0 +1,22 @@
+#meme-image {
+  width: 700px;
+
+}
+
+#meme-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+}
+
+#meme-image-container {
+  background-color: white;
+  position: relative;
+  height: max-content;
+  width: max-content;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
