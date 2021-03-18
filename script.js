@@ -7,7 +7,7 @@ function insertText() {
     textImage.innerText = textInput.value;
 }
 
-textImage.addEventListener('keydown', insertText);
+textImage.addEventListener('keyup', insertText);
 
 /* function uploadImg */
 const insert = document.querySelector('#meme-insert');

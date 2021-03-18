@@ -37,8 +37,9 @@ section {
 }
 
 #meme-text {
-    color: white;
+    color: rgb(235, 228, 228);
     font-size: 30px;
+    text-decoration-color: black;
     text-shadow: 5px 5px 5px black;
 }
 
