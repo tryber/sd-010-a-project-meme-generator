@@ -1,0 +1,30 @@
+h1 {
+  font-size: 3em;
+}
+
+.margins {
+  margin: 0 0 10px;
+}
+
+.container-size {
+  height: 400px;
+  width: 400px;
+}
+
+/* Requisito 3 */
+#meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* Requisito 4 */
+#meme-text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  top: 20px;
+  width: 100%;
+}
