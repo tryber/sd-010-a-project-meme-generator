@@ -11,12 +11,14 @@ h1 {
   width: 400px;
 }
 
+/* Requisito 3 */
 #meme-image-container {
   background-color: white;
   border: 1px solid black;
   position: relative;
 }
 
+/* Requisito 4 */
 #meme-text {
   color: white;
   font-size: 30px;

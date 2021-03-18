@@ -7,7 +7,7 @@ inputText.addEventListener('keyup', () => {
 });
 
 // Requisito 2
-document.querySelector('#meme-insert').addEventListener('change', (event) => {
+document.querySelector('#meme-insert').addEventListener('change', event => {
   const image = document.querySelector('#meme-image');
   image.src = URL.createObjectURL(event.target.files[0]);
   image.onload = () => {
