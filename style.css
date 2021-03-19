@@ -44,11 +44,11 @@ header {
   font-size: 30px;
   font-weight: 800;
   position: absolute;
-  top: 545px;
   width: 380px;
   color: white;
   text-align: center;
   text-shadow: 5px 5px 5px black;
+  margin-bottom: 5px;
 }
 
 #meme-image {
