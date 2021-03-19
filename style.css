@@ -1,0 +1,6 @@
+* { box-sizing: border-box;
+}
+
+#meme-image-container { border: solid 1px black;
+  background-color: white;
+}
