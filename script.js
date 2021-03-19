@@ -19,8 +19,8 @@ function addTextToMeme() {
 
 function addBorderToMeme() {
   const btn = document.querySelectorAll('button');
-  const meme = document.getElementById('meme-image-container')
-  for (let index = 0; index < btn.length; index +=1) {
+  const meme = document.getElementById('meme-image-container');
+  for (let index = 0; index < btn.length; index += 1) {
     btn[index].addEventListener('click', () => {
       const border = window.getComputedStyle(btn[index]).border;
       meme.style.border = border;
@@ -28,7 +28,18 @@ function addBorderToMeme() {
   }
 }
 
+function addImagetoMeme() {
+  const imgs = document.querySelectorAll('.meme');
+  const img = document.getElementById('meme-image');
+  for (let index = 0; index < imgs.length; index += 1) {
+    imgs[index].addEventListener('click', () => {
+      img.src = imgs[index].src;
+    });
+  }
+}
+
 window.onload = () => {
   addTextToMeme();
   addBorderToMeme();
+  addImagetoMeme();
 };

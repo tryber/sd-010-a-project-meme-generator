@@ -84,3 +84,20 @@ button {
   border: 6px groove green;
   background-color: green;
 }
+
+#memes-prontos {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+  text-decoration: underline;
+}
+
+.meme {
+  width: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
