@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MEME GENERATOR</h1>
+    </header>
+    <section id="text-image-section">
+        <div id="div-text">
+            <span><strong>Texto: </strong></span>
+            <input maxlength="60" type="text" placeholder="Digite a frase" id="text-input">
+        </div>
+        <div>
+        <span><strong>Imagem: </strong></span>
+        <input accept="image/*" onchange="loadFile(event)" type="file" name="file" id="meme-insert">
+        </div>
+    </section>
+    <div id="section">
+        <div id="meme-image-container">
+            <p id="meme-text"></p>
+            <img id="meme-image">
+        </div>
+    </div>
+    <div id="buttons">
+        <button id="fire">FIRE</button>
+        <button id="earth">EARTH</button>
+        <button id="water">WATER</button>
+    </div>
+    <h2>MEMES PRONTOS</h2>
+    <section id="memes-prontos">
+        <img class="meme" src="/imgs/meme1.png" alt="meme1" id="meme-1">
+        <img class="meme" src="/imgs/meme2.png" alt="meme2" id="meme-2">
+        <img class="meme" src="/imgs/meme3.png" alt="meme3" id="meme-3">
+        <img class="meme" src="/imgs/meme4.png" alt="meme4" id="meme-4">
+    </section>
+    <script src="/script.js"></script>
+</body>
+</html>
