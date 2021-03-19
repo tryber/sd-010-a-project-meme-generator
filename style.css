@@ -46,8 +46,9 @@ header {
   position: absolute;
   top: 545px;
   width: 380px;
-  color: rgb(39 , 39 , 39);
+  color: white;
   text-align: center;
+  text-shadow: 5px 5px 5px black;
 }
 
 #meme-image {

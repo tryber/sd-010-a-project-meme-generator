@@ -1,5 +1,5 @@
 const loadFile = function load(e) {
-  const img = document.getElementById('output');
+  const img = document.getElementById('meme-image');
   img.src = URL.createObjectURL(e.target.files[0]);
   img.onload = function eraseURL() {
     URL.revokeObjectURL(img.src);
