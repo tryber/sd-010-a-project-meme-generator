@@ -1,3 +1,11 @@
+const loadFile = function load(e) {
+  const img = document.getElementById('output');
+  img.src = URL.createObjectURL(e.target.files[0]);
+  img.onload = function eraseURL() {
+    URL.revokeObjectURL(img.src);
+  };
+};
+
 function addTextToMeme() {
   const text = document.getElementById('text-input');
   const p = document.createElement('p');
