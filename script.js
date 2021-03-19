@@ -17,6 +17,18 @@ function addTextToMeme() {
   });
 }
 
+function addBorderToMeme() {
+  const btn = document.querySelectorAll('button');
+  const meme = document.getElementById('meme-image-container')
+  for (let index = 0; index < btn.length; index +=1) {
+    btn[index].addEventListener('click', () => {
+      const border = window.getComputedStyle(btn[index]).border;
+      meme.style.border = border;
+    });
+  }
+}
+
 window.onload = () => {
   addTextToMeme();
+  addBorderToMeme();
 };
