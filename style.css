@@ -1,0 +1,12 @@
+p {
+  font-size: large;
+  font-weight: 700;
+}
+
+body {
+  margin: 1.5%;
+}
+
+div p {
+  font-size: x-large;
+}
