@@ -15,3 +15,9 @@ function loadImage() { // consultado o uso desta função em https://stackoverfl
   });
 }
 loadImage();
+
+function addTextMeme() {
+  selectText.innerText = selectInputText.value;
+}
+
+selectInputText.addEventListener('keyup', addTextMeme);
