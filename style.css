@@ -17,17 +17,12 @@ body {
 }
 
 #meme-image-container {
-  margin-top: 50px;
-  background-color: white;
-  border: 1px solid #000;
-}
-
-#meme {
   border: 1px solid #000;
   width: 500px;
   height: 500px;
   position: relative;
   margin-top:50px;
+  background-color: white;
 }
 
 #meme-image {
@@ -44,5 +39,16 @@ body {
   font-weight: bold;
   font-size: 30px;
   text-shadow: 5px 5px 5px #000;
+}
 
+#fire {
+  background: red;
+}
+
+#water {
+  background: blue;
+}
+
+#earth {
+  background-color: green;
 }

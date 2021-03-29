@@ -1,3 +1,5 @@
+const memeContainer = document.getElementById('meme-image-container');
+
 function getTextFromInput() {
   const textMemeInputElement = document.getElementById('text-input');
   const textMemeElement = document.getElementById('meme-text');
@@ -18,7 +20,27 @@ function uploadImage() {
   };
 }
 
+const addFireBorder = () => {
+  memeContainer.style.border = '3px dashed red';
+};
+
+const addWaterBorder = () => {
+  memeContainer.style.border = '5px double blue';
+};
+
+const addEartchBorder = () => {
+  memeContainer.style.border = '6px groove green';
+};
+
 window.onload = () => {
+  const fireButton = document.getElementById('fire');
+  const waterButton = document.getElementById('water');
+  const earthButton = document.getElementById('earth');
+
+  fireButton.onclick = addFireBorder;
+  waterButton.onclick = addWaterBorder;
+  earthButton.onclick = addEartchBorder;
+
   getTextFromInput();
   uploadImage();
 };
