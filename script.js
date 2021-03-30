@@ -1,4 +1,5 @@
 const memeContainer = document.getElementById('meme-image-container');
+const memeImage = document.getElementById('meme-image');
 
 function getTextFromInput() {
   const textMemeInputElement = document.getElementById('text-input');
@@ -32,14 +33,28 @@ const addEartchBorder = () => {
   memeContainer.style.border = '6px groove green';
 };
 
+const changeBackground = (template) => {
+  const { src } = template;
+
+  memeImage.src = src;
+};
+
 window.onload = () => {
   const fireButton = document.getElementById('fire');
   const waterButton = document.getElementById('water');
   const earthButton = document.getElementById('earth');
+  const meme1 = document.getElementById('meme-1');
+  const meme2 = document.getElementById('meme-2');
+  const meme3 = document.getElementById('meme-3');
+  const meme4 = document.getElementById('meme-4');
 
   fireButton.onclick = addFireBorder;
   waterButton.onclick = addWaterBorder;
   earthButton.onclick = addEartchBorder;
+  meme1.onclick = () => changeBackground(meme1);
+  meme2.onclick = () => changeBackground(meme2);
+  meme3.onclick = () => changeBackground(meme3);
+  meme4.onclick = () => changeBackground(meme4);
 
   getTextFromInput();
   uploadImage();
