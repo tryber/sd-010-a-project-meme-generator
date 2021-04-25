@@ -45,27 +45,15 @@ function buttonEvent(event) {
   }
 }
 
-function setMeme(event) {
-  const e = event.target;
-  const image = document.querySelector('#meme-image');
-
-  image.src = e.attributes[1].textContent;
-}
-
-function getEvents() {
+function getButtonsEvent() {
   const buttons = document.querySelectorAll('.avatar-button');
-  const memes = document.querySelectorAll('.memes');
-
   buttons.forEach((button) => {
     button.addEventListener('click', buttonEvent);
-  });
-  memes.forEach((meme) => {
-    meme.addEventListener('click', setMeme);
   });
 }
 
 window.onload = () => {
   getInput();
   getFiles();
-  getEvents();
+  getButtonsEvent();
 };
