@@ -10,6 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: antiquewhite;
 }
 
 #container {
@@ -50,6 +51,7 @@ body {
   height: 450px;
   width: 450px;
   border: 1px solid black;
+  transition: 0.3s;
 }
 
 #meme-text {
