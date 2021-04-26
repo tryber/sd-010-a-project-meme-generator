@@ -68,8 +68,11 @@ body {
 }
 
 #button-section {
+  height: 80px;
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .avatar-button {
@@ -90,15 +93,21 @@ body {
 
 #fire {
   background-color: red;
-  color: yellow;
+  background-image: url('/imgs/fire.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #water {
   background-color: blue;
-  color: aqua;
+  background-image: url('/imgs/water.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #earth {
   background-color: green;
-  color: lightgreen;
+  background-image: url('/imgs/earth.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
