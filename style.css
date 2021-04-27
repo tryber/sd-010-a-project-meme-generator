@@ -79,3 +79,8 @@ button {
 #earth {
   background-color: green;
 }
+
+#defaultMemes {
+  margin-top: 100px;
+  margin-left: -100px;
+}
