@@ -17,8 +17,16 @@ img {
   position: absolute;
   font-size: 30px;
   left: 0;
-  right: 0;
+  right: 100;
   top: 6em;
   color: white;
   text-shadow: 5px 5px 5px black;
+}
+
+/* 3 - Adicione uma moldura no container. A moldura deve ter 1 pixel de largura, deve ser preta e do tipo 'solid'. A área onde a imagem aparecerá deve ter fundo branco. */
+#meme-image-container {
+  background-color: white;
+  max-width: 600px;
+  height: auto;
+  border: 1px solid black;
 }
