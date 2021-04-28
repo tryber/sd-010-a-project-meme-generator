@@ -10,9 +10,6 @@ img {
   object-fit: cover;
 }
 
-/* O texto do elemento `meme-text` deve ter uma sombra preta, de 5 pixels na horizontal, 5 pixels na vertical e um raio de desfoque de 5 pixels; 
-- O texto do elemento `meme-text` deve ter a fonte com o tamanho de 30 pixels;
-- O texto do elemento `meme-text` deve estar na cor branca.*/
 #meme-text {
   position: absolute;
   font-size: 30px;
