@@ -4,31 +4,79 @@
   text-align: center;
 }
 
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  color: darkgreen;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+  margin: 0 auto;
+}
+
+#meme-image-container {
+  background-color: white;
+  max-width: 600px;
+  max-height: 600px;  
+  margin: 0 auto;
 }
 
 #meme-text {
   position: absolute;
   font-size: 30px;
   left: 0;
-  right: 100;
-  top: 6em;
+  right: 0;
+  top: 25%;
   color: white;
   text-shadow: 5px 5px 5px black;
 }
 
-/* 3 - Adicione uma moldura no container. A moldura deve ter 1 pixel de largura, deve ser preta e do tipo 'solid'. A área onde a imagem aparecerá deve ter fundo branco. */
-#meme-image-container {
-  background-color: white;
-  max-width: 600px;
-  height: auto;
-  border: 1px solid black;
+#fire {
+  background-color: red;
 }
 
-body {
-  max-width: 900px;
-  margin: 0 auto;
+.fire-style {
+  border: 3px double red;
 }
+
+#water {
+  background-color: blue;
+}
+
+.water-style {
+  border: blue 8px solid;
+}
+
+#earth {
+  background-color: green;
+}
+
+.earth-style {
+  border: dotted green 6px;
+}
+
+#img-meme {
+  margin: 8px auto;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+#img-meme img {
+  max-width: 20%;
+  max-height: 20%;
+}
+
+#container-btns {
+  background:grey;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 12px;  
+}
+

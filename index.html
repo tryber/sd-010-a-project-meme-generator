@@ -10,21 +10,36 @@
 </head>
 <body>
 
-  <div id="meme-image-container">
-    <input type="text" id="text-input" maxlength="60">
-    
-    <!-- https://pt.stackoverflow.com/questions/66733/upload-somente-de-imagens 
-
-    https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977-->
-
-    <input type="file" accept="image/png, image/jpeg" id="meme-insert">
-  </div>
-
   
-  <div id="meme-image-container">
-    <p id="meme-text"></p>
-    <img src="" alt="meme image" id="meme-image">
-  </div>
+  <section id="main-container">
+
+    <h1>GERADOR DE MEMES</h1>
+    
+    <div>
+      <textarea type="textBox" id="text-input" maxlength="60"></TextArea>
+        <input type="file" accept="image/png, image/jpeg" id="meme-insert">
+    </div>
+    
+    <div id="meme-image-container">
+      <p id="meme-text"></p>
+      <img src="" alt="meme image" id="meme-image">
+    </div> 
+    
+    <div id="container-btns">
+        <button class="btn-style" id="fire">Fire</span></button>
+        <button class="btn-style" id="water">Water</span></button>
+        <button class="btn-style" id="earth">Earth</span></button>
+    </div>
+    
+    <div id="img-meme">
+        <img src="./46482723-914713205554017-4832741937838555136-n-cke.jpg" alt="poker-meme" id="meme-1">
+        <img src="./C5AQNfcWAAQxbs_.jpg" alt="megusta-meme" id="meme-2">
+        <img src="./download.jpeg" alt="lol-meme" id="meme-3">
+        <img src="./meme-que-imortalizou-a-pose-do-fisico.jpg" alt="troll-meme" id="meme-4">
+    
+    </div>
+
+  </section>
 
 </body>
 </html>

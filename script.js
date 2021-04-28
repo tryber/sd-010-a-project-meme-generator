@@ -1,26 +1,61 @@
+const getInputTxt = document.getElementById('text-input');
+const getImgInput = document.getElementById('meme-insert');
+const getStyle = document.querySelectorAll('.btn-style');
+const getMemeImg = document.querySelectorAll('#img-meme img');
+const createP = document.createElement('p');
+createP.id = 'meme-text';
+const getImgDiv = document.getElementById('meme-image-container');
+getImgDiv.appendChild(createP);
+getImgDiv.style.border = 'solid black 1px';
+
 const textInput = () => {
-  document.getElementById('text-input').addEventListener('input', (event) => {
-    document.getElementById('meme-text').innerText = event.target.value;
+  getInputTxt.addEventListener('input', (event) => {
+    createP.innerText = event.target.value;
   });
 };
 
 textInput();
 
-const loadImg = (img) => {
+const imgRead = (img) => {
   const reader = new FileReader();
   reader.onloadend = (event) => {
-    document.getElementById('meme-image')
-      .src = event.target.result;
+    const image = document.getElementById('meme-image');
+    image.src = event.target.result;
   };
+  // https://developer.mozilla.org/pt-BR/docs/Web/API/FileReader/readAsDataURL
   reader.readAsDataURL(img);
 };
 
-const imgInput = () => {
-  const getImgInput = document.getElementById('meme-insert');
+const uploadImg = () => {
   // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event
   getImgInput.addEventListener('change', (event) => {
-    loadImg(event.target.files[0]);
+    const displayImage = event.target.files[0];
+    imgRead(displayImage);
   });
 };
 
-imgInput();
+uploadImg();
+
+const optionalStyles = () => {
+  getStyle.forEach((event) => {
+    event.addEventListener('click', (button) => {
+      const idName = button.target.id;
+      getImgDiv.style.border = '';
+      getImgDiv.className = `${idName}-style`;
+    });
+  });
+};
+
+optionalStyles();
+
+const renderImage = () => {
+  getMemeImg.forEach((event) => {
+    event.addEventListener('click', (img) => {
+      const memeImg = img.target;
+      const renderizedMeme = document.querySelector('#meme-image');
+      renderizedMeme.src = memeImg.src;
+    });
+  });
+};
+
+renderImage();
