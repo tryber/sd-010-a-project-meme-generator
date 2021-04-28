@@ -2,19 +2,17 @@ const getInputTxt = document.getElementById('text-input');
 const getImgInput = document.getElementById('meme-insert');
 const getStyle = document.querySelectorAll('.btn-style');
 const getMemeImg = document.querySelectorAll('#img-meme img');
-const createP = document.createElement('p');
-createP.id = 'meme-text';
+// const createP = document.createElement('p');
+// createP.id = 'meme-text';
 const getImgDiv = document.getElementById('meme-image-container');
-getImgDiv.appendChild(createP);
+// getImgDiv.appendChild(createP);
 getImgDiv.style.border = 'solid black 1px';
 
 const textInput = () => {
   getInputTxt.addEventListener('input', (event) => {
-    createP.innerText = event.target.value;
+    document.getElementById('meme-text').innerText = getInputTxt.value;
   });
 };
-
-textInput();
 
 const imgRead = (img) => {
   const reader = new FileReader();
@@ -34,8 +32,6 @@ const uploadImg = () => {
   });
 };
 
-uploadImg();
-
 const optionalStyles = () => {
   getStyle.forEach((event) => {
     event.addEventListener('click', (button) => {
@@ -45,8 +41,6 @@ const optionalStyles = () => {
     });
   });
 };
-
-optionalStyles();
 
 const renderImage = () => {
   getMemeImg.forEach((event) => {
@@ -58,4 +52,9 @@ const renderImage = () => {
   });
 };
 
-renderImage();
+window.onload = () => {
+  optionalStyles();
+  uploadImg();
+  textInput();
+  renderImage();
+};
