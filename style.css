@@ -42,7 +42,7 @@ img {
 }
 
 .fire-style {
-  border: 3px double red;
+  border: 3px dashed red;
 }
 
 #water {
@@ -50,7 +50,7 @@ img {
 }
 
 .water-style {
-  border: blue 8px solid;
+  border: blue 5px double;
 }
 
 #earth {
@@ -58,7 +58,7 @@ img {
 }
 
 .earth-style {
-  border: dotted green 6px;
+  border: groove green 6px;
 }
 
 #img-meme {
