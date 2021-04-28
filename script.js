@@ -5,3 +5,22 @@ const textInput = () => {
 };
 
 textInput();
+
+const loadImg = (img) => {
+  const reader = new FileReader();
+  reader.onloadend = (event) => {
+    document.getElementById('meme-image')
+      .src = event.target.result;
+  };
+  reader.readAsDataURL(img);    
+};
+
+const imgInput = () => {
+  const imgInput = document.getElementById('meme-insert');
+  // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event
+  imgInput.addEventListener('change', (event) => {
+    loadImg(event.target.files[0]);
+  });
+};
+
+imgInput();
