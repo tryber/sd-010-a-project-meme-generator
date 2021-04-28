@@ -30,3 +30,8 @@ img {
   height: auto;
   border: 1px solid black;
 }
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
