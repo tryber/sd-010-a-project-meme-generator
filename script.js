@@ -10,7 +10,7 @@ getImgDiv.style.border = 'solid black 1px';
 
 const textInput = () => {
   getInputTxt.addEventListener('input', (event) => {
-    document.getElementById('meme-text').innerText = getInputTxt.value;
+    document.getElementById('meme-text').innerText = event.target.value;
   });
 };
 
