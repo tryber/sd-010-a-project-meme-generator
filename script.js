@@ -5,11 +5,11 @@ const getMemeImg = document.querySelectorAll('#img-meme img');
 const createP = document.createElement('p');
 createP.id = 'meme-text';
 const getImgDiv = document.getElementById('meme-image-container');
-getImgDiv.appendChild(createP);
 getImgDiv.style.border = 'solid black 1px';
 
 const textInput = () => {
   getInputTxt.addEventListener('input', (event) => {
+    getImgDiv.appendChild(createP);
     createP.innerText = event.target.value;
   });
 };
